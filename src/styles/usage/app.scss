@@ -1,0 +1,10 @@
+//引入的scss
+@charset "utf-8";//注明了编码格式
+
+@import "../lib/core/reset.scss";
+@import "./core/config.scss";//对所有样式的初始化
+@import "./core/common.scss";//项目中所使用的通用样式
+
+// Views页面显示
+@import "./modules/index";//此为需要编写的不同于common的样式（ps：这里链接的index的样式）
+

@@ -1,0 +1,7 @@
+请自行依赖各种gulp webpack react功能
+
+可以使用YO框架写SCSS 正常写SCSS
+可以使用react
+JSX请写入src/jsx中
+scss请写入src\styles\usage\modules中
+使用时请开启命令行输入gulp再开启另一个命令行输入webpack --watch
