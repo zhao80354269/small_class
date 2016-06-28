@@ -48,9 +48,9 @@
 	var ReactDOM=__webpack_require__(38);
 	//依赖子组件
 	//var Tool=require('./Tool.jsx');
-	//var ComponentBanner=require('./ComponentBanner.jsx');
-	//var ComponentAudio=require('./ComponentAudio.jsx');
-	//var ComponentNav=require('./ComponentNav.jsx');
+	var ComponentBanner=__webpack_require__(168);
+	var ComponentAudio=__webpack_require__(169);
+	var ComponentNav=__webpack_require__(170);
 	//页面的布局 用于存放每个子组件的容器 ---开始
 	var ComponentLayout=React.createClass({displayName: "ComponentLayout",
 		render:function(){
@@ -20369,6 +20369,54 @@
 	var ReactMount = __webpack_require__(160);
 	
 	module.exports = ReactMount.renderSubtreeIntoContainer;
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React=__webpack_require__(1);
+	var ComponentBanner=React.createClass({displayName: "ComponentBanner",
+		render:function(){
+			return(
+				React.createElement("div", null)
+			)
+		}
+	});
+	module.exports=ComponentBanner;
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React=__webpack_require__(1);
+	var ComponentAudio=React.createClass({displayName: "ComponentAudio",
+		
+		render:function(){
+			var css=this.CSS;
+			return(
+				React.createElement("div", null, "123")
+			)
+		}
+	});
+	
+	module.exports=ComponentAudio;
+
+/***/ },
+/* 170 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React=__webpack_require__(1);
+	var ComponentNav=React.createClass({displayName: "ComponentNav",
+		render:function(){
+			return(
+				React.createElement("div", null, 
+					React.createElement("div", null), 
+					React.createElement("div", null)
+				)
+			)
+		}
+	});
+	module.exports=ComponentNav;
 
 /***/ }
 /******/ ]);
